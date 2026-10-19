@@ -14,3 +14,11 @@ fi
 
 # exercise: write a script that prints whether it is 
 # morning or not
+
+# Lisett's alternate solution: check AM/PM
+ampm=$(date +%p)
+if [ "$ampm" = "AM" ]; then
+  echo "Good morning, it is AM!"
+else
+  echo "Nope, it's PM - not morning."
+fi
